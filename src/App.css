@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+* {
+  margin:0;
+  padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 700px) {
+  .Contacts, .Title {
+    width: 98%;
+    margin: 4% 1%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media only screen and (max-width: 1000px) {
+  .Contacts {
+    width: 84%;
+    padding: 2% 3%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .Contacts {
+    width: 64%;
+    padding: 2% 3%;
+  }
+}
+
+.Contact_container, .Contacts div, .Contacts, .App, .Btns {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Contact_container, .App, .Btns {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Btns > * {
+  font-size: 1rem;
+  margin: 0.5%;
+}
+
+.Contacts h1 {
+  margin: 3% 0%;
+}
+
+.Title {
+  width: 100%;
+}
+
+.selected {
+  background-color: rgb(115, 151, 183);
+}
+
+.Contact_container {
+  width: 100%;
+  padding: 2% 0%;
+}
+
+.Contact_container > *, .Title > * {
+  width: 14%;
+  padding: 1%;
+}
+
+.Contact_container div img {
+  width: 80%;
+}
+
+.Contact_container > *,.Contacts div:nth-child(2) > *, .Contacts h1{
+  text-align: center;
 }
